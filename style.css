@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka&family=Red+Hat+Text:wght@400;600&display=swap');
+
+/*
+font-family: 'Fredoka', sans-serif;
+font-family: 'Red Hat Text', sans-serif;
+
+colors:
+ black / white 
+ purple : #C18CB9
+ green : #BAC07A
+ yellow : #D2A658
+ light sage ; #ADBBAD
+ gray blue : #738C9B
+*/
+
+body {
+  margin:0;
+  text-align:center;
+}
+
+.nav {
+  display: block;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  z-index: 900;
+}
+
+.icon {
+  position: fixed;
+  cursor: pointer;
+  top: 14%;
+  right: -2%;
+  width: 40px;
+  height: 45px;
+  transform: translate(-50%, -50%);
+  display: block;
+  z-index: 1000;
+  background: #C18CB9;
+  padding: 26px;
+  border-radius: 50%;
+}
+
+.hamburger {
+  width: 40px;
+  height: 4px;
+  line-height: 70px;
+  background: #fff;
+  border-radius: 5px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); */
+  transition: 0.5s;
+}
+
+.hamburger:before,
+.hamburger:after {
+  content: '';
+  position: absolute;
+  width: 40px;
+  height: 4px;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: 0.5s;
+}
+
+.hamburger:before {
+  top: -10px;
+}
+
+.hamburger:after {
+  top: 10px;
+}
+
+.icon.active .hamburger {
+  background: rgba(0, 0, 0, 0);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0);
+}
+
+.icon.active .hamburger:before {
+  top: 0;
+  transform: rotate(45deg);
+}
+
+.icon.active .hamburger:after {
+  top: 0;
+  transform: rotate(135deg);
+}
+
+.menu-mobile {
+  background-color: #efefef;
+  height: 100vh;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  padding-top: 150px;
+  font-family: 'Helvetica', sans-serif;
+  text-align: center;
+}
+
+.menu-mobile,
+.menu-mobile a {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.menu-mobile a {
+  clear: right;
+  text-decoration: none;
+  color: #333;
+  height: 70px;
+  line-height: 70px;
+}
+.menu-mobile a:hover {
+  color: red;
+}
+
+.menu-mobile {
+  display: none;
+}
+/* END OF Mobile Menu */
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  /* START of desktop menu for 768 media query */
+
+  .menu-mobile {
+    display: none;
+  }
+}
+
+/* post-menu page code */
+
+h2 {
+  font-family: 'Fredoka', cursive;
+  font-size: 50px;
+  line-height: 65px;
+  margin-top: 40px;
+  text-align: center;
+}
+p {
+  font-family: 'Red Hat Text', cursive;
+  font-size: 30px;
+  line-height: 65px;
+  margin-top: 40px;
+  text-align: center;
+}
+img{
+  width: 100%
+}
+.background
+    {
+      position: relative;
+      top: 0;
+      left: 0;
+    }
+    .logo
+    {
+      width: 700px;
+      position: absolute;
+      text-align: center;
+      top: 100px;
+      left: 375px;
+    }
+
+    
+.hours {
+  background:#BAC07A;
+  margin-top: 195px;
+}
+.about {
+  background:#ADBBAD;
+}
+.two-column {
+  display:flex;
+  width:80%;
+  margin:auto;
+  /* border: 1px solid black; */
+  padding:80px;
+}
+.two-column div {
+  flex:1;
+  text-align: center;
+  
+}
+.text-content {
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 520px) {
+.two-column {
+    flex-direction:column;
+}
+  .two-column:has(.text-left){
+      flex-direction:column-reverse;
+  }
+}
