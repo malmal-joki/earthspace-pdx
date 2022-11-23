@@ -14,8 +14,8 @@ colors:
 */
 
 body {
-  margin:0;
-  text-align:center;
+  margin: 0;
+  text-align: center;
 }
 
 .nav {
@@ -37,7 +37,7 @@ body {
   transform: translate(-50%, -50%);
   display: block;
   z-index: 1000;
-  background: #C18CB9;
+  background: #c18cb9;
   padding: 26px;
   border-radius: 50%;
 }
@@ -60,6 +60,8 @@ body {
 .hamburger:after {
   content: '';
   position: absolute;
+  top: 50%;
+  left: 0%;
   width: 40px;
   height: 4px;
   background: #fff;
@@ -122,24 +124,18 @@ body {
 .menu-mobile {
   display: none;
 }
-/* END OF Mobile Menu */
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-  /* START of desktop menu for 768 media query */
-
-  .menu-mobile {
-    display: none;
-  }
-}
-
-/* post-menu page code */
 
 h2 {
   font-family: 'Fredoka', cursive;
   font-size: 50px;
   line-height: 65px;
-  margin-top: 40px;
+}
+/* post-menu page code */
+
+.homepage h2.post-hero {
+  padding: 120px 60px;
   text-align: center;
+  margin: 0;
 }
 p {
   font-family: 'Red Hat Text', cursive;
@@ -148,54 +144,62 @@ p {
   margin-top: 40px;
   text-align: center;
 }
-img{
-  width: 100%
+img {
+  width: 100%;
 }
-.background
-    {
-      position: relative;
-      top: 0;
-      left: 0;
-    }
-    .logo
-    {
-      width: 700px;
-      position: absolute;
-      text-align: center;
-      top: 100px;
-      left: 375px;
-    }
+.background {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.logo {
+  width: 700px;
+  position: absolute;
+  text-align: center;
+  top: 100px;
+  left: 375px;
+}
 
-    
 .hours {
-  background:#BAC07A;
-  margin-top: 195px;
+  background: #bac07a;
 }
 .about {
-  background:#ADBBAD;
+  background: #adbbad;
 }
 .two-column {
-  display:flex;
-  width:80%;
-  margin:auto;
+  display: flex;
+  width: 80%;
+  margin: auto;
   /* border: 1px solid black; */
-  padding:80px;
+  padding: 80px;
 }
 .two-column div {
-  flex:1;
+  flex: 1;
   text-align: center;
-  
 }
 .text-content {
   display: flex;
   align-items: center;
 }
+/* END OF Mobile Menu */
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  /* START of desktop menu for 768 media query */
+  
+  .menu-mobile {
+    display: none;
+  }
 
-@media screen and (max-width: 520px) {
-.two-column {
-    flex-direction:column;
+@media screen and (max-width: 1024px) {
+.hide-mobile {
+    display: none;
+  }
 }
-  .two-column:has(.text-left){
-      flex-direction:column-reverse;
+@media screen and (max-width: 520px) {
+  .two-column {
+    flex-direction: column;
+  }
+  .two-column:has(.text-left) {
+    flex-direction: column-reverse;
   }
 }
