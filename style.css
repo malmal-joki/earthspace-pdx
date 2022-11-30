@@ -125,18 +125,46 @@ body {
   display: none;
 }
 
+.infobar{
+  width: 100;
+  background: #BAC07A;
+}
+
+/* post-menu page code */
+
+/* Type formats */
+
 h2 {
   font-family: 'Fredoka', cursive;
   font-size: 50px;
   line-height: 80px;
 }
-/* post-menu page code */
 
-.homepage h2.post-hero {
-  padding: 200px 220px;
+ .homepage h2.post-hero {
+  padding: 200px 200px;
   text-align: center;
   margin: 0;
 }
+
+.aboutpage h2.post-hero {
+  padding-top: 150px;
+  text-align: center;
+  margin: 0;
+}
+
+.artpage h2.post-hero {
+  padding-top: 150px;
+  text-align: center;
+  margin: 0;
+}
+
+.yogapage h2.post-hero {
+  padding-top: 150px;
+  text-align: center;
+  margin: 0;
+}
+/*BODY*/
+
 p {
   font-family: 'Red Hat Text', cursive;
   font-size: 30px;
@@ -144,6 +172,44 @@ p {
   margin-top: 40px;
   text-align: center;
  }
+
+ .aboutpage p.large-body {
+  padding: 140px;
+  text-align: center;
+  margin: 0;
+  font-size: 28px;
+  line-height: 60px;
+}
+
+.yogapage p.large-body {
+  padding: 140px;
+  text-align: center;
+  margin: 0;
+  font-size: 28px;
+  line-height: 60px;
+}
+
+/* Specail for yoga page */
+h3{
+  font-family: 'Fredoka', cursive;
+  font-size: 30px;
+  line-height: 50px;
+  color: white;
+}
+h4{
+  font-family: 'Red Hat Text', sans-serif, bold;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+}
+p2{
+  font-family: 'Red Hat Text', cursive;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+}
+
+ /*Homepage*/
 
 img {
   width: 100%;
@@ -171,7 +237,6 @@ img {
   display: flex;
   width: 80%;
   margin: auto;
-  /* border: 1px solid black; */
   padding: 80px;
 }
 .two-column div {
@@ -180,9 +245,78 @@ img {
 }
 .text-content {
   display: flex;
-  padding-inline: 70px;
+  align-items: left;
+}
+
+.text-content.text-right {
+  padding-left:70px;
+}
+.text-content.text-left {
+  padding-right:70px;
+} 
+
+
+/*About Page*/
+.pricebar{
+  background: #BAC07A;
+  padding: 10px;
+}
+
+.chickenbar{
+  background: #D2A658;
+}
+
+.chicken-img{
+  background-color: #C18CB9;
+}
+
+
+
+/*Yoga & Dance page*/
+
+.yoga-1 {
+  background: #738C9B;
+}
+.yoga-2{
+  background: #ADBBAD;
+}
+.yoga-3{
+  background: #BAC07A;
+}
+.dance{
+  background: #D2A658;
+}
+
+.two-column {
+  display: flex;
+  width: 80%;
+  margin: auto;
+  padding: 80px;
+}
+.two-column div {
+  flex: 1;
+  text-align: center;
+}
+.img-content{
+  width: 50%;
+}
+.text-content {
+  display: flex;
   align-items: center;
 }
+
+.text-content.text-right {
+  padding-left:70px;
+}
+.text-content.text-left {
+  padding-right:70px;
+} 
+
+
+
+
+
+/* End Bar*/
 
 .endbar{
   background: #C18CB9;
@@ -191,6 +325,7 @@ img {
 .bottomlogo{
   align-items: center;
   width:200px;
+  margin: auto;
 }
 
 

@@ -12,3 +12,7 @@ function closeMobileMenu() {
     $('.icon').trigger('click')
   })
 }
+
+$(toggleIcon)
+$(loseMobileMenu)
+
