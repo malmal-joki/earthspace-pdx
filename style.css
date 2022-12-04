@@ -94,14 +94,27 @@ body {
 }
 
 .menu-mobile {
-  background-color: #efefef;
+  background-color: #C18CB9;
   height: 100vh;
   position: fixed;
   width: 100%;
   z-index: 999;
   padding-top: 150px;
-  font-family: 'Helvetica', sans-serif;
-  text-align: center;
+
+    font-family: 'Fredoka', cursive;
+    text-align: center;
+    font-size: 40px;
+    line-height: 30px;
+    color: white;
+
+    justify-content: space-around;
+}
+
+.infobar{
+  background-color: #BAC07A;
+  padding: 10px;
+  color: black;
+  
 }
 
 .menu-mobile,
@@ -125,10 +138,6 @@ body {
   display: none;
 }
 
-.infobar{
-  width: 100;
-  background: #BAC07A;
-}
 
 /* post-menu page code */
 
@@ -158,6 +167,12 @@ h2 {
   margin: 0;
 }
 
+.artpage h2.post-hero2 {
+  padding: 140px;
+  text-align: center;
+  margin: 0;
+}
+
 .yogapage h2.post-hero {
   padding-top: 150px;
   text-align: center;
@@ -175,6 +190,18 @@ p {
 
  .aboutpage p.large-body {
   padding: 140px;
+  padding-left: 150px;
+  padding-right: 150px;
+  text-align: center;
+  margin: 0;
+  font-size: 28px;
+  line-height: 60px;
+}
+
+.artpage p.large-body {
+  padding: 140px;
+  padding-left: 135px;
+  padding-right: 135px;
   text-align: center;
   margin: 0;
   font-size: 28px;
@@ -183,13 +210,29 @@ p {
 
 .yogapage p.large-body {
   padding: 140px;
+  padding-left: 250px;
+  padding-right: 250px;
   text-align: center;
   margin: 0;
   font-size: 28px;
   line-height: 60px;
 }
 
-/* Specail for yoga page */
+/* Special for art page */
+h5{
+  font-family: 'Red Hat Text', sans-serif, bold;
+  font-size: 30px;
+  text-align: center;
+}
+p3{
+  font-family: 'Red Hat Text', cursive;
+  font-size: 24px;
+  line-height: 20px;
+  text-align: center;
+}
+
+
+/* Special for yoga page */
 h3{
   font-family: 'Fredoka', cursive;
   font-size: 30px;
@@ -233,6 +276,7 @@ img {
 .about {
   background: #adbbad;
 }
+
 .two-column {
   display: flex;
   width: 80%;
@@ -256,7 +300,27 @@ img {
 } 
 
 
-/*About Page*/
+.button {
+  width: 270px;
+  height: 70px;
+  border-radius: 100px;
+  background-color: white;
+  display: inline-block;
+  text-align: center, middle;
+  font-size: 36px;
+  color: black;
+  font-family: 'Fredoka', sans-serif;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+.button:hover {
+  background-color: #C18CB9;
+}
+
+
+
+/*About Page */
+
 .pricebar{
   background: #BAC07A;
   padding: 10px;
@@ -271,8 +335,22 @@ img {
 }
 
 
+/* Art page */
 
-/*Yoga & Dance page*/
+.eventbar-white{
+  background: white;
+  text-align: center;
+  padding-bottom: 10px;
+}
+.eventbar-green{
+  background: #BAC07A;
+  text-align: center;
+  padding: 10px;
+}
+
+
+
+/*Yoga & Dance page */
 
 .yoga-1 {
   background: #738C9B;
@@ -314,8 +392,6 @@ img {
 
 
 
-
-
 /* End Bar*/
 
 .endbar{
@@ -323,6 +399,7 @@ img {
 }
 
 .bottomlogo{
+  padding-top: 5px;
   align-items: center;
   width:200px;
   margin: auto;
