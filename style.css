@@ -94,27 +94,28 @@ body {
 }
 
 .menu-mobile {
-  background-color: #C18CB9;
-  height: 100vh;
+  background-color: #c18cb9;
+  height: 80vh;
   position: fixed;
   width: 100%;
   z-index: 999;
-  padding-top: 150px;
-
-    font-family: 'Fredoka', cursive;
-    text-align: center;
-    font-size: 40px;
-    line-height: 30px;
-    color: white;
-
-    justify-content: space-around;
+  padding-top: 70px;
+  font-family: 'Fredoka', cursive;
+  text-align: center;
+  font-size: 40px;
+  line-height: 30px;
+  color: white;
+  justify-content: space-around;
+}
+.menu-mobile .mobile-logo {
+  width: 200px;
 }
 
-.infobar{
-  background-color: #BAC07A;
+.infobar {
+  background-color: #bac07a;
   padding: 10px;
   color: black;
-  
+  height: 20vh;
 }
 
 .menu-mobile,
@@ -126,18 +127,17 @@ body {
 .menu-mobile a {
   clear: right;
   text-decoration: none;
-  color: #333;
-  height: 70px;
-  line-height: 70px;
+  color: #fff;
+  height: 50px;
+  line-height: 50px;
 }
 .menu-mobile a:hover {
-  color: red;
+  color: #333;
 }
 
 .menu-mobile {
   display: none;
 }
-
 
 /* post-menu page code */
 
@@ -149,7 +149,7 @@ h2 {
   line-height: 80px;
 }
 
- .homepage h2.post-hero {
+.homepage h2.post-hero {
   padding: 200px 200px;
   text-align: center;
   margin: 0;
@@ -186,9 +186,9 @@ p {
   line-height: 65px;
   margin-top: 40px;
   text-align: center;
- }
+}
 
- .aboutpage p.large-body {
+.aboutpage p.large-body {
   padding: 140px;
   padding-left: 150px;
   padding-right: 150px;
@@ -219,41 +219,49 @@ p {
 }
 
 /* Special for art page */
-h5{
+h5 {
   font-family: 'Red Hat Text', sans-serif, bold;
   font-size: 30px;
   text-align: center;
 }
-p3{
+p3 {
   font-family: 'Red Hat Text', cursive;
   font-size: 24px;
   line-height: 20px;
   text-align: center;
 }
 
-
 /* Special for yoga page */
-h3{
+h3 {
   font-family: 'Fredoka', cursive;
   font-size: 30px;
   line-height: 50px;
   color: white;
 }
-h4{
+h4 {
   font-family: 'Red Hat Text', sans-serif, bold;
   font-size: 20px;
   line-height: 30px;
   text-align: center;
 }
-p2{
+p2 {
   font-family: 'Red Hat Text', cursive;
   font-size: 18px;
   line-height: 24px;
   text-align: center;
 }
 
- /*Homepage*/
-
+/*Homepage*/
+.home-bldg {
+  background-image: url(imgs/es-building.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
 img {
   width: 100%;
 }
@@ -263,11 +271,8 @@ img {
   left: 0;
 }
 .logo {
-  width: 700px;
-  position: absolute;
-  text-align: center;
-  top: 100px;
-  left: 375px;
+  width: 40%;
+  margin: auto;
 }
 
 .hours {
@@ -293,12 +298,11 @@ img {
 }
 
 .text-content.text-right {
-  padding-left:70px;
+  padding-left: 70px;
 }
 .text-content.text-left {
-  padding-right:70px;
-} 
-
+  padding-right: 70px;
+}
 
 .button {
   width: 270px;
@@ -314,55 +318,53 @@ img {
   text-decoration: none;
 }
 .button:hover {
-  background-color: #C18CB9;
+  background-color: #c18cb9;
 }
-
-
 
 /*About Page */
 
-.pricebar{
-  background: #BAC07A;
+.pricebar {
+  background: #bac07a;
   padding: 10px;
 }
 
-.chickenbar{
-  background: #D2A658;
+.chickenbar {
+  background: #d2a658;
 }
 
-.chicken-img{
-  background-color: #C18CB9;
+.chicken-img {
+  background-color: #c18cb9;
 }
-
 
 /* Art page */
+.eventbar {
+  text-align: center;
+  padding: 100px 60px;
+}
+.eventbar h5 {
+  margin-top: 0;
+}
 
-.eventbar-white{
+.eventbar-white {
   background: white;
-  text-align: center;
-  padding-bottom: 10px;
 }
-.eventbar-green{
-  background: #BAC07A;
-  text-align: center;
-  padding: 10px;
+.eventbar-green {
+  background: #bac07a;
 }
-
-
 
 /*Yoga & Dance page */
 
 .yoga-1 {
-  background: #738C9B;
+  background: #738c9b;
 }
-.yoga-2{
-  background: #ADBBAD;
+.yoga-2 {
+  background: #adbbad;
 }
-.yoga-3{
-  background: #BAC07A;
+.yoga-3 {
+  background: #bac07a;
 }
-.dance{
-  background: #D2A658;
+.dance {
+  background: #d2a658;
 }
 
 .two-column {
@@ -375,7 +377,7 @@ img {
   flex: 1;
   text-align: center;
 }
-.img-content{
+.img-content {
   width: 50%;
 }
 .text-content {
@@ -384,39 +386,36 @@ img {
 }
 
 .text-content.text-right {
-  padding-left:70px;
+  padding-left: 70px;
 }
 .text-content.text-left {
-  padding-right:70px;
-} 
-
-
+  padding-right: 70px;
+}
 
 /* End Bar*/
 
-.endbar{
-  background: #C18CB9;
+.endbar {
+  background: #c18cb9;
 }
 
-.bottomlogo{
+.bottomlogo {
   padding-top: 5px;
   align-items: center;
-  width:200px;
+  width: 200px;
   margin: auto;
 }
-
 
 /* END OF Mobile Menu */
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
   /* START of desktop menu for 768 media query */
 }
-  .menu-mobile {
-    display: none;
-  }
+.menu-mobile {
+  display: none;
+}
 
 @media screen and (max-width: 1024px) {
-.hide-mobile {
+  .hide-mobile {
     display: none;
   }
 }
