@@ -353,13 +353,16 @@ img {
   background-image: none;
   color: #fff;
   cursor: pointer;
-  font-family: 'Fredoka', sans-serif;
-  font-size: 30px;
-  letter-spacing: 1px;
-  text-decoration: none;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  font-weight: 900;
+  line-height: 1.5;
   margin: 0;
   -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
   padding: 0;
+  text-transform: uppercase;
 }
 .btn-2:disabled {
   cursor: default;
@@ -385,7 +388,7 @@ img {
   mix-blend-mode: difference;
 }
 .btn-2:before {
-  background: black;
+  background: #fff;
   content: "";
   inset: 0;
   position: absolute;
@@ -397,6 +400,7 @@ img {
 }
 
 /*About Page */
+
 
 .pricebar {
   background: #bac07a;
