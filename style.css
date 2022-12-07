@@ -118,6 +118,7 @@ body {
 
 .infobar {
   margin-top: -1px;
+  margin-bottom: 0;
   background-color: #bac07a;
   padding: 20px;
   color: black;
@@ -401,6 +402,26 @@ img {
 
 /*About Page */
 
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1440px;
+  position: relative;
+  margin: auto;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
 
 .pricebar {
   background: #bac07a;
