@@ -517,14 +517,14 @@ Smart phone screen */
   /* Menu button & page */
 
   .icon {
-    top: 8%;
+    top: 7%;
     right: -5%;
     width: 10px;
     height: 10px;
   }
 
   .menu-mobile {
-    padding-top: 100px;
+    padding-top: 80px;
     font-family: 'Fredoka', cursive;
     text-align: center;
     font-size: 30px;
@@ -608,8 +608,8 @@ p {
 
 .yogapage p.large-body {
   padding: 60px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 35px;
+  padding-right: 35px;
   font-size: 15px;
   line-height: 25px;
 }
@@ -618,7 +618,7 @@ p {
 /* Special for art page */
 h5 {
   font-family: 'Red Hat Text', sans-serif, bold;
-  font-size: 18px;
+  font-size: 16px;
 }
 p3 {
   font-family: 'Red Hat Text', cursive;
@@ -675,6 +675,7 @@ p2 {
 .text-content.text-right {
   padding-left: 0px;
   padding-right: 70px;
+  padding-bottom: 20px;
 }
 .text-content.text-left {
   padding-right: 70px;
@@ -689,7 +690,7 @@ p2 {
 
 /* Art page */
 .eventbar {
-  padding: 20px;
+  padding: 15px;
 }
 
 
