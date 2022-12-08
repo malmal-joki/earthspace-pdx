@@ -567,6 +567,7 @@ Smart phone screen */
   }
 
   .infobar {
+    margin-top: -10px;
     background-color: #c18cb9;
     padding: 0px;
   }
