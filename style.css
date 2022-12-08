@@ -154,6 +154,29 @@ body {
 
 /* post-menu page code */
 
+/* slider styles start here */
+.slider {
+  width: 100vw;
+  margin: 0 auto;
+}
+
+.slide-content,
+.slick-initialized .slick-slide {
+  display: flex;
+}
+.slide-content .img-content {
+  flex: 100%;
+}
+
+.slide-content img {
+  width: 100%;
+}
+.slick-prev:before,
+.slick-next:before {
+  color: #333;
+}
+/* slider styles end here */
+
 /* Type formats */
 
 h2 {
@@ -394,7 +417,7 @@ img {
 }
 .btn-2:before {
   background: black;
-  content: "";
+  content: '';
   inset: 0;
   position: absolute;
   transform: translateX(var(--progress, -100%));
@@ -406,8 +429,12 @@ img {
 
 /*About Page */
 
-.mySlides {display: none;}
-img {vertical-align: middle;}
+.mySlides {
+  display: none;
+}
+img {
+  vertical-align: middle;
+}
 
 /* Slideshow container */
 .slideshow-container {
@@ -423,8 +450,12 @@ img {vertical-align: middle;}
 }
 
 @keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .pricebar {
@@ -513,7 +544,6 @@ img {vertical-align: middle;}
 Smart phone screen */
 
 @media screen and (max-width: 768px) {
-
   /* Menu button & page */
 
   .icon {
@@ -530,19 +560,18 @@ Smart phone screen */
     font-size: 30px;
     line-height: 30px;
   }
-  
+
   .menu-mobile .mobile-logo {
     width: 150px;
     margin-bottom: 15%;
   }
-  
+
   .infobar {
     background-color: #c18cb9;
     padding: 0px;
   }
 
-
-/* Type changes */
+  /* Type changes */
 
   h2 {
     font-family: 'Fredoka', cursive;
@@ -554,7 +583,7 @@ Smart phone screen */
     font-family: 'Fredoka', cursive;
     font-size: 16px;
   }
-  
+
   .homepage h2.post-hero {
     padding: 80px 20px;
   }
@@ -563,17 +592,17 @@ Smart phone screen */
     padding-top: 130px;
     font-size: 24px;
   }
-  
+
   .artpage h2.post-hero {
     padding-top: 130px;
     font-size: 24px;
   }
-  
+
   .artpage h2.post-hero2 {
     padding: 60px 25px;
     font-size: 24px;
   }
-  
+
   .yogapage h2.post-hero {
     padding-top: 130px;
     padding-left: 50px;
@@ -581,122 +610,116 @@ Smart phone screen */
     font-size: 24px;
   }
 
-  
   /*BODY*/
 
-p {
-  font-family: 'Red Hat Text', cursive;
-  font-size: 14px;
-  line-height: 25px;
-  margin-top: 20px;
-}
+  p {
+    font-family: 'Red Hat Text', cursive;
+    font-size: 14px;
+    line-height: 25px;
+    margin-top: 20px;
+  }
 
-.aboutpage p.large-body {
-  padding: 60px;
-  padding-left: 20px;
-  padding-right: 20px;
-  font-size: 14px;
-  line-height: 25px;
-}
+  .aboutpage p.large-body {
+    padding: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 14px;
+    line-height: 25px;
+  }
 
-.artpage p.large-body {
-  padding: 60px;
-  padding-left: 20px;
-  padding-right: 20px;
-  font-size: 14px;
-  line-height: 25px;
-}
+  .artpage p.large-body {
+    padding: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 14px;
+    line-height: 25px;
+  }
 
-.yogapage p.large-body {
-  padding: 60px;
-  padding-left: 20px;
-  padding-right: 20px;
-  font-size: 15px;
-  line-height: 25px;
-}
+  .yogapage p.large-body {
+    padding: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 15px;
+    line-height: 25px;
+  }
 
+  /* Special for art page */
+  h5 {
+    font-family: 'Red Hat Text', sans-serif, bold;
+    font-size: 16px;
+  }
+  p3 {
+    font-family: 'Red Hat Text', cursive;
+    font-size: 14px;
+    line-height: 20px;
+  }
 
-/* Special for art page */
-h5 {
-  font-family: 'Red Hat Text', sans-serif, bold;
-  font-size: 16px;
-}
-p3 {
-  font-family: 'Red Hat Text', cursive;
-  font-size: 14px;
-  line-height: 20px;
-}
+  /* Special for yoga page */
+  h3 {
+    font-size: 18px;
+    line-height: 30px;
+  }
+  h4 {
+    font-size: 16px;
+    line-height: 28px;
+    text-align: center;
+  }
+  p2 {
+    font-size: 14px;
+    line-height: 20px;
+  }
 
-/* Special for yoga page */
-h3 {
-  font-size: 18px;
-  line-height: 30px;
-}
-h4 {
-  font-size: 16px;
-  line-height: 28px;
-  text-align: center;
-}
-p2 {
-  font-size: 14px;
-  line-height: 20px;
-}
+  /*Homepage*/
 
+  .logo {
+    width: 80%;
+  }
 
+  .two-column {
+    flex-direction: column;
+  }
+  .two-column:has(.text-left) {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .two-column:has(.text-left) {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .two-column {
+    width: 100%;
+    padding: 40px;
+  }
 
-/*Homepage*/
+  .img-content.img-left {
+    padding-left: 70px;
+  }
+  .img-content.img-right {
+    padding-right: 70px;
+  }
 
-.logo {
-  width: 80%;
-}
+  .text-content.text-right {
+    padding-left: 0px;
+    padding-right: 70px;
+  }
+  .text-content.text-left {
+    padding-right: 70px;
+  }
 
-.two-column {
-  flex-direction: column;
-}
-.two-column:has(.text-left) {
-  flex-direction: column-reverse;
-  align-items: center;
-}
-.two-column:has(.text-left) {
-  flex-direction: column-reverse;
-  align-items: center;
-}
-.two-column {
-  width: 100%;
-  padding: 40px;
-}
+  .btn-2 {
+    font-size: 16px;
+    line-height: 1;
+    padding: 0.7rem 1rem;
+  }
 
-.img-content.img-left {
-  padding-left: 70px;
-}
-.img-content.img-right {
-  padding-right: 70px;
-}
+  /* Art page */
+  .eventbar {
+    padding: 15px;
+  }
 
-.text-content.text-right {
-  padding-left: 0px;
-  padding-right: 70px;
-}
-.text-content.text-left {
-  padding-right: 70px;
-}
+  /* End Bar*/
 
-.btn-2 {
-  font-size: 16px;
-  line-height: 1;
-  padding: 0.7rem 1rem;
-}
-
-
-/* Art page */
-.eventbar {
-  padding: 15px;
-}
-
-
-/* End Bar*/
-
-.bottomlogo {
-  width: 100px;
-}
+  .bottomlogo {
+    width: 100px;
+  }
 }
