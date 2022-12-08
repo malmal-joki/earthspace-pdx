@@ -538,7 +538,7 @@ Smart phone screen */
   
   .infobar {
     background-color: #c18cb9;
-    padding: 10px;
+    padding: 0px;
   }
 
 
@@ -576,8 +576,8 @@ Smart phone screen */
   
   .yogapage h2.post-hero {
     padding-top: 130px;
-    padding-left: 20px;
-    padding-right: 20px ;
+    padding-left: 50px;
+    padding-right: 50px;
     font-size: 24px;
   }
 
@@ -609,8 +609,8 @@ p {
 
 .yogapage p.large-body {
   padding: 60px;
-  padding-left: 35px;
-  padding-right: 35px;
+  padding-left: 20px;
+  padding-right: 20px;
   font-size: 15px;
   line-height: 25px;
 }
@@ -676,16 +676,15 @@ p2 {
 .text-content.text-right {
   padding-left: 0px;
   padding-right: 70px;
-  padding-bottom: 20px;
 }
 .text-content.text-left {
   padding-right: 70px;
 }
 
 .btn-2 {
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1;
-  padding: 0.8rem 2rem;
+  padding: 0.7rem 1rem;
 }
 
 
