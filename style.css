@@ -517,14 +517,14 @@ Smart phone screen */
   /* Menu button & page */
 
   .icon {
-    top: 7%;
+    top: 8%;
     right: -5%;
     width: 10px;
     height: 10px;
   }
 
   .menu-mobile {
-    padding-top: 120px;
+    padding-top: 100px;
     font-family: 'Fredoka', cursive;
     text-align: center;
     font-size: 30px;
@@ -575,8 +575,8 @@ Smart phone screen */
   
   .yogapage h2.post-hero {
     padding-top: 130px;
-    padding-left: 50px;
-    padding-right: 50px ;
+    padding-left: 20px;
+    padding-right: 20px ;
     font-size: 24px;
   }
 
@@ -585,8 +585,8 @@ Smart phone screen */
 
 p {
   font-family: 'Red Hat Text', cursive;
-  font-size: 16px;
-  line-height: 28px;
+  font-size: 14px;
+  line-height: 25px;
   margin-top: 20px;
 }
 
@@ -696,6 +696,6 @@ p2 {
 /* End Bar*/
 
 .bottomlogo {
-  width: 120px;
+  width: 100px;
 }
 }
